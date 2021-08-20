@@ -5,6 +5,7 @@
 
 #![warn(missing_docs)]
 #![no_std]
+#![feature(never_type)]
 
 extern crate cortex_m;
 extern crate embedded_hal as hal;
@@ -17,6 +18,7 @@ pub mod adc;
 pub mod clocks;
 pub mod gpio;
 pub mod i2c;
+pub mod multicore;
 pub mod pll;
 pub mod prelude;
 pub mod pwm;
